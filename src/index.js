@@ -1,13 +1,9 @@
 import _ from 'lodash';
 import './style.css';
+import generateScore from './modules/generateScore.js';
 
 function component() {
-  const element = document.createElement('div');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
+  generateScore('Abebe',1)
 }
 
 component();
