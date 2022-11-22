@@ -1,8 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project 
+# Project : Leaderboard APP
 
-> To do tasks APP
 > The leaderboard App is designed to display scores submitted by different players. It also allows submitting a player's score, where the data is preserved thanks to the external Leaderboard API service. ES6 features have been properly implemented in this app. Connecting with APIs successfully by proper utilization of async and await..
 
 
