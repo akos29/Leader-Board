@@ -16,14 +16,14 @@ export const addNewScore = (e) => {
           setTimeout(() => {
             el.status.classList.remove('success');
             el.status.innerHTML='';
-          }, 5000);
+          }, 3000);
         } else {
           el.status.textContent = 'Cannot add your score please try again later.';
           el.status.classList.add('fail');
           setTimeout(() => {
             el.status.classList.remove('fail');
             el.status.innerHTML='';
-          }, 5000);
+          }, 3000);
         }
       });
       form.reset();
@@ -33,7 +33,7 @@ export const addNewScore = (e) => {
       setTimeout(() => {
         el.status.classList.remove('fail');
         el.status.innerHTML='';
-      }, 5000);
+      }, 3000);
     }
   };
   
