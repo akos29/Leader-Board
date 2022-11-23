@@ -11,7 +11,8 @@ export default class Score {
             method: 'POST',
             body: JSON.stringify(game),
             headers: {
-              'Content-type': 'application/json; charset=UTF-8',
+              'Content-type': 'application/json',
+              'Accept': 'application/json'
             },
           });
           const response = await data.json();
