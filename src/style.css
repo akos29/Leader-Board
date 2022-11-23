@@ -46,8 +46,6 @@ main {
   display: flex;
   flex-direction: row;
   gap: 10%;
-
-  /* justify-content: space-between; */
 }
 
 .recent-score {
@@ -81,8 +79,6 @@ main {
 .scores {
   margin: 1rem 0;
   border: 1px solid var(--secondary);
-
-  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
 .scores p {
