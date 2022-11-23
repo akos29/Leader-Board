@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+:root {
+  --primary: #8a0000;
+  --secondary: #696773;
+  --bg-color: #fdf7fa;
+  --text: #083d77;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  background-color: var(--secondary);
+}
+
+h1 {
+  color: var(--text);
+  font-size: 3.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+
+h2 {
+  color: var(--text);
+  font-size: 2.3em;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.wrapper {
+  margin: 2% 5%;
+  padding: 3%;
+  gap: 1em;
+  background-color: var(--bg-color);
+  min-height: 90vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+
+  /* justify-content: space-between; */
+}
+
+.recent-score {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: var(--text);
+  color: var(--bg-color);
+  padding: 1rem 4rem;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+}
+
+.scores {
+  margin: 1rem 0;
+  border: 1px solid var(--secondary);
+
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+}
+
+.scores p {
+  color: var(--text);
+  font-size: 1.78em;
+  font-weight: 500;
+  padding: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+}
+
+.scores p:nth-child(2n+1) {
+  background-color: var(--primary);
+  color: var(--bg-color);
+}
+
+.add-score {
+  flex-direction: row;
+  padding: 2em;
+}
+
+.add-score h2 {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+input {
+  width: 80%;
+  font-size: 1.3em;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+}
