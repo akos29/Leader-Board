@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Exo 2', sans-serif;
+  transition: all 0.5s ease-out;
 }
 
 body {
@@ -24,6 +25,8 @@ h1 {
   font-size: 3.5em;
   font-weight: 800;
   line-height: 1.5em;
+  transition: all 0.3s ease-in-out;
+  transform: rotate3d(0, 0, 0, 0deg);
 }
 
 h2 {
@@ -45,13 +48,15 @@ h2 {
 main {
   display: flex;
   flex-direction: row;
-  gap: 10%;
+  gap: 5%;
+  padding: 2em;
+  margin-top: 3%;
 }
 
 .recent-score {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  min-width: 55%;
 }
 
 .top {
@@ -96,7 +101,6 @@ main {
 
 .add-score {
   flex-direction: row;
-  padding: 2em;
 }
 
 .add-score h2 {

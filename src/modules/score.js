@@ -1,5 +1,5 @@
 export default class Score {
-        static BASE_URL = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/wzBdoZ3ft7zrPr0kMrEE/scores`;
+        static BASE_URL = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${process.env.API_KEY}/scores`;
       
         static addScore = async ({ user, score }) => {
           const game = {
