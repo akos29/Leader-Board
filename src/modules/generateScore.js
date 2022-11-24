@@ -1,11 +1,14 @@
 import * as el from './elementVar.js';
+import Score from './score.js';
 
-const generateScore = (name,score) => {
+const generateScore = () => {
+    el.scores.innerHTML = '';
+    Score.getScore().then((result) => {
+        result.forEach(res => {
+                    el.scores.innerHTML +=`<p>${res.user} : ${res.score}</p>`;
+      });
+});
 
-    for(let i=1; i<10; i+=1){
-        el.scores.innerHTML +=`<p>${name} : ${score*10}</p>`;
-        score=score+13;
-    }
 }
 
 export default generateScore;

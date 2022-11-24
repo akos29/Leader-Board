@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Exo 2', sans-serif;
+  transition: all 0.5s ease-out;
 }
 
 body {
@@ -24,6 +25,8 @@ h1 {
   font-size: 3.5em;
   font-weight: 800;
   line-height: 1.5em;
+  transition: all 0.3s ease-in-out;
+  transform: rotate3d(0, 0, 0, 0deg);
 }
 
 h2 {
@@ -45,15 +48,15 @@ h2 {
 main {
   display: flex;
   flex-direction: row;
-  gap: 10%;
-
-  /* justify-content: space-between; */
+  gap: 5%;
+  padding: 2em;
+  margin-top: 3%;
 }
 
 .recent-score {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  min-width: 55%;
 }
 
 .top {
@@ -81,8 +84,6 @@ main {
 .scores {
   margin: 1rem 0;
   border: 1px solid var(--secondary);
-
-  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
 .scores p {
@@ -100,7 +101,6 @@ main {
 
 .add-score {
   flex-direction: row;
-  padding: 2em;
 }
 
 .add-score h2 {
@@ -120,4 +120,16 @@ input {
   font-size: 1.3em;
   padding: 1em;
   box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+}
+
+.success {
+  font-size: 2em;
+  color: green;
+  padding: 1em;
+}
+
+.fail {
+  font-size: 2em;
+  color: red;
+  padding: 1em;
 }
