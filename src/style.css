@@ -26,18 +26,20 @@ h1 {
   font-weight: 800;
   line-height: 1.5em;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #205715b6 0%,
-    #10327a 29%,
-    #ff13628f 67%,
-    #00ffa6 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
+  background-image:
+    linear-gradient(
+      -225deg,
+      #c44f11b6 0%,
+      #3a107a 29%,
+      #ff13628f 67%,
+      #ff0 100%
+    );
   background-size: 90% auto;
-  color: #fff;
-  background-clip: text;
+
+  /* csslint ignore:start */
+  background-clip: border-box;
+
+  /* csslint ignore:end */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
