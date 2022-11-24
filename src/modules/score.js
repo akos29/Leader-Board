@@ -24,4 +24,5 @@ export default class Score {
           const games = await response.json();
           return games.result;
         };
+        
       }
