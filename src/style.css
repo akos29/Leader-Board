@@ -18,6 +18,8 @@
 
 body {
   background-color: var(--secondary);
+  background-image: url(./img/alex-perez-ioJBsYQ-pPM-unsplash.jpg);
+
 }
 
 h1 {
@@ -57,6 +59,8 @@ h2 {
   padding: 3%;
   gap: 1em;
   background-color: var(--bg-color);
+  opacity: 0.67;
+  border-radius: 70px;
   min-height: 90vh;
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
 }
