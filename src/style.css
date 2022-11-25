@@ -1,10 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,600;0,700;0,800;1,400;1,600&display=swap');
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--bg-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
 :root {
   --primary: #8a0000;
   --secondary: #696773;
   --bg-color: #fdf7fa;
   --text: #083d77;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text);
 }
 
 * {
@@ -18,12 +36,12 @@
 
 body {
   background-color: var(--secondary);
-  background-image: url(./img/alex-perez-ioJBsYQ-pPM-unsplash.jpg);
-
+  background-image: url(./img/pawel-czerwinski-d5TBzrddHMk-unsplash.jpg);
+  background-position: 80%;
 }
 
 h1 {
-  color: var(--text);
+  color: var(--bg-color);
   font-size: 3.5em;
   font-weight: 800;
   line-height: 1.5em;
@@ -31,10 +49,10 @@ h1 {
   background-image:
     linear-gradient(
       -225deg,
-      #c44f11b6 0%,
-      #3a107a 29%,
-      #ff13628f 67%,
-      #ff0 100%
+      #e3d9d3d9 0%,
+      #ca873485 29%,
+      #861037cf 67%,
+      rgba(135, 178, 135, 0.535) 100%
     );
   background-size: 90% auto;
 
@@ -48,7 +66,7 @@ h1 {
 }
 
 h2 {
-  color: var(--text);
+  color: var(--bg-color);
   font-size: 2.3em;
   font-weight: 600;
   line-height: 1.5em;
@@ -59,10 +77,11 @@ h2 {
   padding: 3%;
   gap: 1em;
   background-color: var(--bg-color);
-  opacity: 0.67;
+  opacity: 0.47;
   border-radius: 70px;
   min-height: 90vh;
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  background-image: url(./img/alex-perez-ioJBsYQ-pPM-unsplash.jpg);
 }
 
 main {
@@ -102,12 +121,17 @@ main {
 }
 
 .scores {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   border: 1px solid var(--secondary);
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 45vh;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 .scores p {
-  color: var(--text);
+  color: var(--bg-color);
   font-size: 1.78em;
   font-weight: 500;
   padding: 0.5em;
@@ -146,10 +170,14 @@ input {
   font-size: 2em;
   color: green;
   padding: 1em;
+  background-color: #fdf7fa;
+  border-radius: 50px;
 }
 
 .fail {
   font-size: 2em;
   color: red;
   padding: 1em;
+  background-color: #fdf7fa;
+  border-radius: 50px;
 }
