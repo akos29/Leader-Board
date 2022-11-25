@@ -4,6 +4,7 @@
 
 > The leaderboard App is designed to display scores submitted by different players. It also allows submitting a player's score, where the data is preserved thanks to the external Leaderboard API service. ES6 features have been properly implemented in this app. Connecting with APIs successfully by proper utilization of async and await..
 
+<img width="793" alt="image" src="https://user-images.githubusercontent.com/35809268/204055839-e003ef00-2e5d-4d31-9acc-228d078c896b.png">
 
 
 
