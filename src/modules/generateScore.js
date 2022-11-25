@@ -5,7 +5,7 @@ const generateScore = () => {
     el.scores.innerHTML = '';
     Score.getScore().then((result) => {
         result.forEach(res => {
-                    el.scores.innerHTML +=`<p>${res.user} : ${res.score}</p>`;
+            el.scores.innerHTML +=`<p>${res.user} : ${res.score}</p>`;
       });
 });
 

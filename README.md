@@ -23,7 +23,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://akos29.github.io/To-do-list/)
+[Live Demo Link](https://akos29.github.io/Leader-Board/)
 
 
 ## Getting Started
